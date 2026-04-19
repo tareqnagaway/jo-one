@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/assets/fonts/SF-Pro-Display-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Arabic';
+  src: url('/assets/fonts/SF-Pro-Arabic-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

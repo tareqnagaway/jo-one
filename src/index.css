@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@import "./fonts.css";
+@import "leaflet/dist/leaflet.css";
+
+@theme {
+  --color-primary: #1e3a8a;
+  --color-secondary: #C5A059;
+  --radius-jone: 2.5rem;
+  
+  --font-sans: 'SF Pro Arabic', 'SF Pro Display', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  html, body {
+    @apply overflow-x-hidden w-full;
+    -webkit-text-size-adjust: 100%;
+    touch-action: manipulation;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900 font-bold;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply !font-bold;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white py-4 px-8 rounded-jone font-bold shadow-lg active:scale-95 transition-all disabled:opacity-50 disabled:active:scale-100 flex items-center justify-center gap-2;
+  }
+  
+  .btn-gold {
+    @apply bg-secondary text-white py-4 px-8 rounded-jone font-bold shadow-lg active:scale-95 transition-all disabled:opacity-50 disabled:active:scale-100 flex items-center justify-center gap-2;
+  }
+
+  .input-field {
+    @apply w-full p-4 border-2 border-gray-100 rounded-jone bg-white focus:border-primary focus:outline-none transition-all font-bold text-gray-800;
+  }
+
+  /* Custom Leaflet Dark/Clean Styles */
+  .leaflet-container {
+    background: #0f172a !important; /* Slate 900 */
+  }
+  .leaflet-tile {
+    filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Jo One",
+  "description": "تطبيق Jo One لخدمات النقل والخدمات الذكية",
+  "requestFramePermissions": ["geolocation"]
+}
